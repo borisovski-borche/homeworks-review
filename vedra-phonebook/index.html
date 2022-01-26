@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Phone Book</title>
+  </head>
+  <body>
+    <!-- div with inputs -->
+    <div class="containerOne">
+      <!-- first name -->
+      <input
+        type="text"
+        name="firstName"
+        id="firstName"
+        placeholder="Input first name"
+      />
+      <!-- last name -->
+      <input
+        type="text"
+        name="lastName"
+        id="lastName"
+        placeholder="Input last name"
+      />
+      <!-- number -->
+      <input type="text" name="number" id="number" placeholder="Number" />
+    </div>
+    <!-- div with the table -->
+    <div class="containerTwo">
+      <h1>Phone Book</h1>
+      <table id="table">
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Number</th>
+          <th></th>
+        </tr>
+      </table>
+    </div>
+    <!-- div with the buttons -->
+    <div class="containerThree">
+      <button id="addBtn">Add Contact</button>
+      <button id="saveBtn">Save</button>
+    </div>
+    <script src="script-reviewed.js"></script>
+  </body>
+</html>
