@@ -113,3 +113,18 @@ let resetForm = () => {
   userInputLastName.value = "";
   userInputNumber.value = "";
 };
+
+const testBtn = document.querySelector("#test");
+
+testBtn.addEventListener("click", () => {
+  console.log("Test was clicked");
+});
+testBtn.addEventListener("click", () => {
+  console.log("Test was clicked");
+});
+testBtn.addEventListener("click", () => {
+  console.log("Test was clicked");
+});
+testBtn.addEventListener("click", () => {
+  console.log("Test was clicked");
+});

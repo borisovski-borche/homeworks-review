@@ -75,7 +75,7 @@ let addContactRow = (table, name, lastName, number, array) => {
     cellFour.innerHTML += `<button class="deleteBtn">Delete</button>`;
 
     //here we attach event listeners to edit and delete when we are generating the row
-    //this will prevent any duplicate events bubbling ( will cover this in advanced js )
+    //the problem is that on each new row generation there are new events created
     //but the point is that the row and its logic are contained within it
     //no need to select button outside of it
     cellFour.querySelector(".editBtn").addEventListener("click", () => {
@@ -156,7 +156,7 @@ let buttons = (btnOne, btnTwo, array, btnThree) => {
     //second problem, it creates multiple objects instead of just one in the array
     //-------
     //The problem here is that you are not overwriting the original row/object you are editing and the code is just adding more
-    //And because of event bubbling (see above comment) it is making multiple copies
+    //And because of listener duplication it is making multiple copies
     console.log("save clicked");
     createContact(
       userInputFirstName.value,
@@ -178,4 +178,19 @@ addButton.addEventListener("click", function () {
     phoneBook
   );
   resetForm();
+});
+
+const testBtn = document.querySelector("#test");
+
+testBtn.addEventListener("click", () => {
+  console.log("Test was clicked");
+});
+testBtn.addEventListener("click", () => {
+  console.log("Test was clicked");
+});
+testBtn.addEventListener("click", () => {
+  console.log("Test was clicked");
+});
+testBtn.addEventListener("click", () => {
+  console.log("Test was clicked");
 });
