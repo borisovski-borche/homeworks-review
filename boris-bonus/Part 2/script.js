@@ -37,3 +37,7 @@ function addItems() {
     userInput.value = "";
   }
 }
+
+const createRow = (key, value) => {
+  const row = document.createElement("tr");
+};

@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgba(45, 106, 5, 0.3253676470588235) 8%,
+    rgba(108, 135, 103, 0.26094187675070024) 50%,
+    rgba(0, 212, 255, 0.1516981792717087) 100%
+  );
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+div.buttons {
+  display: flex;
+  gap: 2em;
+  margin-bottom: 2em;
+  align-items: flex-start;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6em;
+}
+
+#myTable {
+  width: 1em;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px black;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(45, 106, 5, 0.3981967787114846) 8%,
+    rgba(108, 135, 103, 0.44021358543417366) 50%,
+    rgba(0, 212, 255, 0.28335084033613445) 100%
+  );
+}
+
+th,
+td {
+  padding: 10px;
+  color: black;
+  text-align: center;
+  font-size: medium;
+}
+
+th {
+  background-color: #212738;
+  color: white;
+  background-image: url("https://i.pinimg.com/564x/cd/f1/b9/cdf1b9756b5ea68906cbd097e53d20f2.jpg");
+}
+
+button {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 30px;
+  font-size: 15px;
+  padding: 0 15px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+.detailsBtn a {
+  text-decoration: none;
+  color: #422800;
+}
+
+#myList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+#avatarsTable {
+  width: 200px;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+#avatarsTable tr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+div.containerTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#avatarsTable img {
+  box-shadow: 0 0 20px black;
+  width: 5em;
+  border-radius: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
