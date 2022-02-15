@@ -119,7 +119,7 @@ let showDetails = (value, storage) => {
   loadButton.addEventListener("click", () => {
     loadData(memoryData.url)
       .then(storeData)
-      .then(value => showData(memoryData.current.filter((el, i) => i < 10))); // You will probably have questions about the filters , i'll explain in class.
+      .then(value => showData(memoryData.current.slice(0, 10))); // You will probably have questions about the filters , i'll explain in class.
   });
   //button to do the same as the load button but call a different API that is now stored into the next property of our storage object
   nextButton.addEventListener("click", () => {
@@ -128,7 +128,7 @@ let showDetails = (value, storage) => {
       loadData(memoryData.next)
         .then(storeData)
         .then(value => {
-          showData(memoryData.current.filter((el, i) => i < 10));
+          showData(memoryData.current.slice(0, 10));
           memoryData.shouldFetchNext = false;
         })
         //when the user gets to the last page alert him that he is at the end and can't go further
@@ -136,7 +136,7 @@ let showDetails = (value, storage) => {
     } else {
       //if shouldFetchNext is false that means we are currently showing the first 10 elements and we just need to render the second
       //10 without fetching data
-      showData(memoryData.current.filter((el, i) => i >= 10));
+      showData(memoryData.current.slice(10));
       memoryData.shouldFetchNext = true;
     }
   });
